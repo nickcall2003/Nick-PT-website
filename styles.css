@@ -423,3 +423,14 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
   .foot-grid{grid-template-columns:1fr;gap:30px;padding:44px 0 30px;text-align:left}
   .foot-bottom .fb-in{flex-direction:column;gap:8px;text-align:center}
 }
+
+/* hero emblem (brand-forward) */
+.hero-emblem-wrap{position:relative;display:grid;place-items:center;width:min(440px,84vw);aspect-ratio:1;margin:0 auto}
+.hero-emblem-glow{position:absolute;inset:0;border-radius:50%;
+  background:radial-gradient(circle at 50% 46%, rgba(47,98,230,.55), rgba(47,98,230,.14) 46%, transparent 70%);
+  filter:blur(8px)}
+.hero-emblem-img{position:relative;width:84%;filter:drop-shadow(0 26px 54px rgba(0,0,0,.62));
+  animation:emblemFloat 6s ease-in-out infinite}
+@keyframes emblemFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@media(prefers-reduced-motion:reduce){.hero-emblem-img{animation:none}}
+@media(max-width:900px){.hero-media{order:-1}.hero-emblem-wrap{width:min(300px,66vw)}}

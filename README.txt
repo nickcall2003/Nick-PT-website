@@ -31,7 +31,6 @@ YOUR PHOTOS (already included)
 Three images live in  and already show on the site:
   call-before.jpg   before shot (shirtless)
   call-after.jpg    after shot (white shirt)
-  call-hero.jpg     top-of-home hero (same as after)
 
 To swap any of them later, replace the file with the same name.
 Portrait (4:5) works best. If an image is ever missing, the site
