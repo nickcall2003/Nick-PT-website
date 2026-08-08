@@ -434,3 +434,63 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
 @keyframes emblemFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @media(prefers-reduced-motion:reduce){.hero-emblem-img{animation:none}}
 @media(max-width:900px){.hero-media{order:-1}.hero-emblem-wrap{width:min(300px,66vw)}}
+
+/* payment methods (footer + memberships) */
+.foot-pay{position:relative;border-top:1px solid rgba(159,176,192,.12)}
+.foot-pay .wrap{padding:24px 0}
+.pay-methods{display:flex;flex-direction:column;align-items:center;gap:14px}
+.pm-label{font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:.74rem;color:#8b99a8}
+.pm-row{display:flex;gap:30px;flex-wrap:wrap;justify-content:center}
+.pm{display:flex;flex-direction:column;align-items:center;gap:9px}
+.pm-ic{width:50px;height:50px;border-radius:12px;overflow:hidden;line-height:0;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+.pm-ic svg{display:block}
+.pm-name{font-size:.74rem;color:#9fb0c0;letter-spacing:.02em}
+
+/* brand pun emphasis in CTA */
+.cta-band h2 em.hook{font-style:normal;color:var(--blue-bright);text-shadow:0 2px 22px rgba(59,111,224,.45)}
+
+/* how it works */
+.how .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 24px}
+.step-n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-family:'Anton',sans-serif;font-size:1.35rem;margin-bottom:14px}
+.step h3{margin:0 0 8px}
+.step p{color:var(--muted);margin:0}
+.how-cta{text-align:center;margin-top:30px}
+@media(max-width:820px){.how .steps{grid-template-columns:1fr}}
+
+/* trust bar */
+.trust-bar{background:var(--ink);color:#e7edf2}
+.trust-bar .tb-in{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 32px;padding:20px 0}
+.tb-item{font-family:'Barlow Semi Condensed',sans-serif;font-weight:600;letter-spacing:.03em;color:#cfd8e0;font-size:.98rem}
+.tb-item b{color:var(--blue-bright);margin-right:7px}
+
+/* instagram follow strip */
+.ig-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+.ig-tile{position:relative;display:block;aspect-ratio:1;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.ig-tile img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .4s}
+.ig-tile:hover img{transform:scale(1.05)}
+.ig-badge{position:absolute;top:10px;right:10px;line-height:0;filter:drop-shadow(0 1px 4px rgba(0,0,0,.7))}
+.ig-follow p a{color:var(--blue);font-weight:600}
+@media(max-width:820px){.ig-grid{gap:8px}}
+
+/* free-plan lead magnet band */
+.freeplan{background:var(--ink);color:#eef3f7}
+.freeplan .fp-in{display:flex;align-items:center;justify-content:space-between;gap:26px;padding:42px 0}
+.freeplan h2{color:#fff;margin:6px 0 8px}
+.freeplan p{color:#c3ccd6;max-width:54ch;margin:0}
+.freeplan .btn{white-space:nowrap}
+@media(max-width:820px){.freeplan .fp-in{flex-direction:column;align-items:flex-start}}
+
+/* daily motivation */
+.motivation{background:linear-gradient(160deg,#0c1118,#0f1a2e);color:#eef3f7;text-align:center}
+.motivation .wrap{padding:64px 0}
+.mot-quote{font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;font-size:clamp(1.3rem,3vw,2.05rem);line-height:1.3;color:#fff;max-width:36ch;margin:14px auto 0}
+.mot-quote:before{content:"\201C";color:var(--blue-bright);margin-right:2px}
+.mot-quote:after{content:"\201D";color:var(--blue-bright);margin-left:2px}
+.mot-cta{display:flex;flex-direction:column;align-items:center;gap:14px;margin-top:28px}
+.mot-note{font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:#9fb0c0}
+.fp-actions{display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:820px){.fp-actions{width:100%}.fp-actions .btn{flex:1;text-align:center}}
+
+/* motivation credit line */
+.mot-by{display:block;margin-top:16px;font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;color:#9fb0c0;font-style:normal}

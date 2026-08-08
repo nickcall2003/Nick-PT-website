@@ -34,3 +34,21 @@
   }, {threshold:.14});
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
 })();
+
+/* daily motivation — rotates quote of the day (ready to power a future daily send) */
+(function(){
+  var quotes=[
+    {t:`You lack focus, not potential.<br>You lack consistency, not ability.<br>You lack strategy, not resources.<br>You lack discipline, not opportunities.`, by:"Unknown"},
+    {t:`Guys like you always think other people get lucky. I don't get lucky &mdash; I make my own luck.`, by:"Harvey Specter, Suits"},
+    {t:`People have a hard time letting go of their suffering. Out of a fear of the unknown, they prefer suffering that is familiar.`, by:"Thich Nhat Hanh"},
+    {t:`You might have more talent than me. You might be smarter. You might have it on me in nine categories &mdash; but you're not going to out-work me. It's such a simple, basic concept.`, by:"Will Smith"}
+  ];
+  var el=document.getElementById('motd');
+  if(el){
+    var now=new Date(), start=new Date(now.getFullYear(),0,0);
+    var i=Math.floor((now-start)/86400000) % quotes.length;
+    el.innerHTML=quotes[i].t;
+    var by=document.getElementById('motby');
+    if(by) by.textContent = quotes[i].by ? ('\u2014 '+quotes[i].by) : '';
+  }
+})();
