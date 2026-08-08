@@ -4,7 +4,7 @@ CALL COACHING & PERFORMANCE — personal training website
 Upload ALL of these into your repo root (all in one place, no folders):
 
   index.html         Home (hero, highlights, before/after, memberships, testimonials)
-  about.html         About / your story + credentials (100->150, 4-5 yrs, NASM)
+  about.html         About / your story + credentials (100->150, 4-5 yrs, custom plans)
   memberships.html   Pricing (weekly + monthly, plan stack, payment logos)
   faq.html           Frequently asked questions
   contact.html       Text/Call + Email
@@ -70,3 +70,26 @@ the five .html files and styles.css footer.
 ACCEPTED PAYMENTS shown with logos: Apple Pay, Cash App, Venmo, PayPal, Cash.
 
 Tagline: "Answer the call."  Session length: 60 minutes (no 30s).
+
+------------------------------------------------------------------
+LATEST ADDITIONS / NOTES
+------------------------------------------------------------------
+TESTIMONIALS: the "What clients say" section on the home page is
+hidden (commented out) until you have real quotes. To turn it back
+on, open index.html, find "TESTIMONIALS: hidden until...", delete
+that opening comment line and the closing comment marker just below
+the section, then replace the "Client name" placeholders and quote
+text with the real thing.
+
+SOCIAL SHARING: share.png is a branded preview image, and every page
+now has Open Graph + Twitter tags so your link looks professional
+when posted. For the preview to load everywhere, once your domain is
+live change the og:image / twitter:image values from "share.png" to
+the full URL, e.g. https://YOURDOMAIN.com/share.png (in each .html).
+
+LOCAL SEO: index.html includes LocalBusiness (HealthClub) structured
+data for Google — name, area served (Memphis & Cordova), phone,
+Instagram, and the free-workout offer.
+
+DAILY MOTIVATION: quotes rotate by day and now show credit lines.
+Edit the list in site.js (the "daily motivation" block).
