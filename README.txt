@@ -74,12 +74,10 @@ Tagline: "Answer the call."  Session length: 60 minutes (no 30s).
 ------------------------------------------------------------------
 LATEST ADDITIONS / NOTES
 ------------------------------------------------------------------
-TESTIMONIALS: the "What clients say" section on the home page is
-hidden (commented out) until you have real quotes. To turn it back
-on, open index.html, find "TESTIMONIALS: hidden until...", delete
-that opening comment line and the closing comment marker just below
-the section, then replace the "Client name" placeholders and quote
-text with the real thing.
+TESTIMONIALS & CLIENT RESULTS: the home page now shows Amanda Yount's
+testimonial and her before/after (amanda-before.jpg / amanda-after.jpg).
+To add more clients, duplicate the .quote-feature figure and/or the
+.transform before/after block in index.html and drop in new images.
 
 SOCIAL SHARING: share.png is a branded preview image, and every page
 now has Open Graph + Twitter tags so your link looks professional

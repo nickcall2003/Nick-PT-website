@@ -494,3 +494,11 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
 
 /* motivation credit line */
 .mot-by{display:block;margin-top:16px;font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;color:#9fb0c0;font-style:normal}
+
+/* featured client testimonial */
+.quote-feature{max-width:62ch;margin:0 auto;text-align:center;position:relative;padding:6px 20px}
+.quote-feature .qmark{font-family:'Anton',sans-serif;font-size:3.4rem;color:var(--silver);line-height:.5;display:block;margin-bottom:6px}
+.quote-feature blockquote{font-size:1.2rem;line-height:1.62;color:var(--ink-soft);margin:0 0 20px;font-weight:500}
+.quote-feature .q-by{display:flex;flex-direction:column;gap:3px}
+.quote-feature .q-by .nm{font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink)}
+.quote-feature .q-by .gl{color:var(--blue);font-weight:600;font-size:.92rem}
