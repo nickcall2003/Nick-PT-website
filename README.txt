@@ -63,7 +63,7 @@ the footer contact line the same way.
 CONTACT (baked in)
 ------------------------------------------------------------------
   Text / Call:  (901) 359-0305
-  Email:        Gavin.nicholas2003@gmail.com
+  Email:        Nick@callscoaching.com
 Swap in a support number/email later by find/replacing those across
 the five .html files and styles.css footer.
 
@@ -80,10 +80,8 @@ To add more clients, duplicate the .quote-feature figure and/or the
 .transform before/after block in index.html and drop in new images.
 
 SOCIAL SHARING: share.png is a branded preview image, and every page
-now has Open Graph + Twitter tags so your link looks professional
-when posted. For the preview to load everywhere, once your domain is
-live change the og:image / twitter:image values from "share.png" to
-the full URL, e.g. https://YOURDOMAIN.com/share.png (in each .html).
+has Open Graph + Twitter tags (now pointing at https://callscoaching.com)
+plus canonical URLs. Your link will show the branded preview when posted.
 
 LOCAL SEO: index.html includes LocalBusiness (HealthClub) structured
 data for Google — name, area served (Memphis & Cordova), phone,

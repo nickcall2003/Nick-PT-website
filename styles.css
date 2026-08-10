@@ -500,5 +500,17 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
 .quote-feature .qmark{font-family:'Anton',sans-serif;font-size:3.4rem;color:var(--silver);line-height:.5;display:block;margin-bottom:6px}
 .quote-feature blockquote{font-size:1.2rem;line-height:1.62;color:var(--ink-soft);margin:0 0 20px;font-weight:500}
 .quote-feature .q-by{display:flex;flex-direction:column;gap:3px}
-.quote-feature .q-by .nm{font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink)}
-.quote-feature .q-by .gl{color:var(--blue);font-weight:600;font-size:.92rem}
+.quote-feature .q-by .nm{display:block;font-family:'Barlow Semi Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--ink)}
+.quote-feature .q-by .gl{display:block;margin-top:2px;color:var(--blue);font-weight:600;font-size:.92rem}
+
+/* cal.com booking embed */
+.cal-embed{max-width:1000px;margin:0 auto;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 12px 30px rgba(20,26,33,.08)}
+#my-cal-inline{min-height:640px;width:100%;display:flex;align-items:center;justify-content:center;overflow:auto}
+@media(max-width:600px){#my-cal-inline{min-height:560px}}
+
+/* Book Now card (contact) */
+.connect a.book-now{background:var(--blue);border-color:var(--blue)}
+.connect a.book-now .ic{background:rgba(255,255,255,.16)}
+.connect a.book-now .label{color:#fff}
+.connect a.book-now .val{color:#dbe4ff}
+.connect a.book-now:hover{background:var(--blue-deep)}
