@@ -45,3 +45,29 @@ V2 POLISH (this update) — only styles.css & site.js changed
 - STICKY MOBILE CTA: a "Claim your free workout" bar pinned to the bottom
   on phones (auto-injected by site.js — no per-page HTML needed).
 To retune the accent, change --accent in styles.css :root (v2 block).
+
+------------------------------------------------------------------
+IMPORTANT — if the site looked unchanged after uploading
+------------------------------------------------------------------
+That is browser/host CACHING, not a missing change. The CSS + JS are
+now versioned (styles.css?v=2 and site.js?v=2) in all five .html files,
+which forces browsers to load the new files. After uploading, do a hard
+refresh (or open in a private tab). The quickest proof it worked: on a
+phone you'll see the blue "Claim your free workout" bar pinned to the
+bottom of the screen, and "the call." in the hero turns cyan.
+
+Also fixed this pass: site.js now keeps the daily-motivation quote block
+(it had been dropped) AND the sticky mobile CTA.
+Next time you tweak styles.css or site.js, bump the number (?v=3, ?v=4…)
+so phones pick up the change.
+
+------------------------------------------------------------------
+BUILD v3 — how to confirm it went live
+------------------------------------------------------------------
+The footer now shows "build v3" (bottom-left, next to the copyright).
+CSS/JS are versioned ?v=3. After you commit + hard-refresh, if the
+footer says "build v3" you are on the newest files. If it still says
+nothing / old, the commit didn't land — re-upload and COMMIT.
+
+iPhone tip: delete old downloads first. iOS makes index (1).html,
+index (2).html ... it's easy to upload an older duplicate by accident.

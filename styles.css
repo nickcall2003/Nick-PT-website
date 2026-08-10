@@ -602,3 +602,6 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
 @keyframes ctaPulse{0%,100%{opacity:.55;transform:scale(.82)}50%{opacity:1;transform:scale(1.15)}}
 @media(prefers-reduced-motion:reduce){.mobile-cta .spark{animation:none}}
 @media(max-width:820px){.mobile-cta{display:block}body{padding-bottom:80px}}
+
+/* footer build stamp */
+.bld{opacity:.55;font-weight:600;letter-spacing:.04em}
