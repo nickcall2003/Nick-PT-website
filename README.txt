@@ -162,3 +162,22 @@ Footer reads "build v8".
 
 STILL PENDING (need real data from you, won't invent):
 - 2-4 more client transformations (name, timeframe, result, photo).
+
+------------------------------------------------------------------
+BUILD v9 — polish pass
+------------------------------------------------------------------
+- Protocol "Move": "pain-free" -> "move and train with confidence"
+  (avoids a health-outcome promise).
+- Protocol "Fuel": now "a personalized 7-day nutrition plan..." (keeps
+  the real deliverable, frames it as individualized).
+- Monthly is now a loud BEST VALUE: star pill + cyan glow ring on the
+  card (home snapshot + Programs page).
+- Hero CTA is explicit: "Claim your free 30-minute session".
+- Free plan branded as "The Calls 5-Day Starter".
+Footer reads "build v9".
+
+DELIBERATELY NOT CHANGED (your call):
+- Daily motivation: a reviewer wants it removed, but you asked to keep it
+  and expand it to 82 quotes. Left in. Say the word to remove it.
+- Testimonials: still need 2-4 REAL ones (name, timeframe, result, photo)
+  to build the results section. Won't invent them.
