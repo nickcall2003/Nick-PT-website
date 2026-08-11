@@ -450,13 +450,13 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
 .cta-band h2 em.hook{font-style:normal;color:var(--blue-bright);text-shadow:0 2px 22px rgba(59,111,224,.45)}
 
 /* how it works */
-.how .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.how .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
 .step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 24px}
 .step-n{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--blue);color:#fff;font-family:'Anton',sans-serif;font-size:1.35rem;margin-bottom:14px}
 .step h3{margin:0 0 8px}
 .step p{color:var(--muted);margin:0}
 .how-cta{text-align:center;margin-top:30px}
-@media(max-width:820px){.how .steps{grid-template-columns:1fr}}
+@media(max-width:900px){.how .steps{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.how .steps{grid-template-columns:1fr}}
 
 /* trust bar */
 .trust-bar{background:var(--ink);color:#e7edf2}
@@ -653,3 +653,6 @@ footer{background:#0b0a0b;color:var(--paper);padding:46px 0 22px}
 .lf-status.err{display:block;color:#c0392b}
 .lf-fine{margin-top:12px;color:var(--muted);font-size:.85rem}
 .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+
+/* v8 — reassurance note + 4-up steps */
+.snap-note{text-align:center;margin:20px auto 0;color:var(--muted);font-weight:600;font-size:.95rem}

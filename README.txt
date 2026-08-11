@@ -144,3 +144,21 @@ your 4 keep their credits.
 To edit/add: open site.js, find "var quotes=[" and add a line:
   {t:`Your quote here`, by:"Name or leave empty"}
 Keep each entry on its own line ending in a comma (except the last).
+
+------------------------------------------------------------------
+BUILD v8 — accuracy + conversion polish
+------------------------------------------------------------------
+- "24/7 coaching" softened to "direct coach access / message me anytime"
+  everywhere (more honest than implying 24-hour availability). The hero
+  stat now reads 24/7 "Message access" (you can message anytime).
+- How It Works now has a 4th step: "Track & adjust".
+- Pricing: added the per-session math (about $18.75/session monthly vs
+  $30 weekly) and a "No gym membership required" line under the snapshot.
+- FAQ: added "Is training in person or online?" and "Do you train women?"
+- About degree wording stays as accurate Physical Therapy at U of Memphis
+  (a reviewer keeps guessing "Sports Medicine" — do NOT change it to that;
+  it would be false).
+Footer reads "build v8".
+
+STILL PENDING (need real data from you, won't invent):
+- 2-4 more client transformations (name, timeframe, result, photo).
