@@ -4,25 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Free Workout | Call Coaching &amp; Performance &mdash; Memphis, TN</title>
-<meta name="description" content="Claim your free 30-minute workout with Nicholas Call, personal trainer in Memphis &amp; Cordova, TN. Text or email to get scheduled." />
+<meta name="description" content="Claim your free 30-minute session with Nicholas Call, personal trainer in Memphis &amp; Cordova, TN. Text or email to get scheduled." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Call Coaching &amp; Performance" />
 <meta property="og:title" content="Free Workout | Call Coaching &amp; Performance &mdash; Memphis, TN" />
-<meta property="og:description" content="Claim your free 30-minute workout with Nicholas Call, personal trainer in Memphis &amp; Cordova, TN. Text or email to get scheduled." />
+<meta property="og:description" content="Claim your free 30-minute session with Nicholas Call, personal trainer in Memphis &amp; Cordova, TN. Text or email to get scheduled." />
 <meta property="og:image" content="https://callscoaching.com/share.png" />
 <link rel="canonical" href="https://callscoaching.com/contact.html" />
 <meta property="og:url" content="https://callscoaching.com/contact.html" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Free Workout | Call Coaching &amp; Performance &mdash; Memphis, TN" />
-<meta name="twitter:description" content="Claim your free 30-minute workout with Nicholas Call, personal trainer in Memphis &amp; Cordova, TN. Text or email to get scheduled." />
+<meta name="twitter:description" content="Claim your free 30-minute session with Nicholas Call, personal trainer in Memphis &amp; Cordova, TN. Text or email to get scheduled." />
 <meta name="twitter:image" content="https://callscoaching.com/share.png" />
 <link rel="icon" type="image/png" href="logo.png" />
 <link rel="apple-touch-icon" href="logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=3" />
+<link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
 <header class="site-header" id="top">
@@ -34,12 +34,12 @@
     <nav class="nav-links" id="menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="memberships.html">Memberships</a>
+      <a href="memberships.html">Programs</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
     <div class="hdr-right">
-      <a class="btn btn-solid" href="contact.html">Free workout</a>
+      <a class="btn btn-solid" href="contact.html">Free session</a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -47,24 +47,67 @@
 
 <section class="page-hero">
   <div class="wrap">
-    <div class="label kick">Free 30-minute workout</div>
-    <h1>Claim your free workout</h1>
-    <p>Your first 30-minute workout is on me &mdash; no cost, no obligation. Text or email me &mdash; whatever&#39;s easiest &mdash; and I&#39;ll get you scheduled.</p>
+    <div class="label kick">Free 30-minute session</div>
+    <h1>Claim your free session</h1>
+    <p>Your first 30-minute session is on me &mdash; no cost, no obligation. Text or email me &mdash; whatever&#39;s easiest &mdash; and I&#39;ll get you scheduled.</p>
+  </div>
+</section>
+
+<section class="section" id="apply" style="background:var(--bone)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><div class="label kick">Start here</div><h2>Let&#39;s build your plan</h2></div>
+      <p>Tell me a bit about you and I&#39;ll reach out to set up your free 30-minute session. Takes about a minute.</p>
+    </div>
+    <form id="lead-form" class="lead-form reveal js-formspree" action="https://formspree.io/f/xrpzpnbw" method="POST" data-ok="Got it &mdash; I&#39;ll be in touch shortly to set up your free session.">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <input type="hidden" name="_subject" value="New free-session request &mdash; Calls Coaching" />
+      <div class="lf-row">
+        <label class="lf-field"><span>Name</span><input type="text" name="name" required placeholder="Your name" /></label>
+        <label class="lf-field"><span>Phone</span><input type="tel" name="phone" placeholder="(901) 000-0000" /></label>
+      </div>
+      <label class="lf-field"><span>Email</span><input type="email" name="email" required placeholder="you@email.com" /></label>
+      <div class="lf-row">
+        <label class="lf-field"><span>Primary goal</span>
+          <select name="goal" required>
+            <option value="" disabled selected>Choose one</option>
+            <option>Lose fat</option>
+            <option>Build muscle</option>
+            <option>Get stronger</option>
+            <option>Improve endurance</option>
+            <option>General fitness</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="lf-field"><span>Days you can train</span>
+          <select name="training_days" required>
+            <option value="" disabled selected>Choose one</option>
+            <option>1&ndash;2 days</option>
+            <option>3&ndash;4 days</option>
+            <option>5+ days</option>
+          </select>
+        </label>
+      </div>
+      <label class="lf-field"><span>What&#39;s stopping you right now? (optional)</span><textarea name="message" rows="4" placeholder="Where you&#39;re starting, injuries, schedule &mdash; anything at all."></textarea></label>
+      <button type="submit" class="btn btn-solid lf-submit">Answer the call &rarr;</button>
+      <p class="lf-status" id="lead-status" role="status" aria-live="polite"></p>
+      <p class="lf-fine">Prefer to just text? Scroll down &mdash; or call (901)&nbsp;359-0305.</p>
+    </form>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap contact-grid">
     <div class="reveal">
-      <div class="label kick">Two ways to reach me</div>
+      <div class="label kick">Prefer to message me?</div>
       <h2>Let&#39;s get you started.</h2>
-      <p>Tell me a little about your goals and when you&#39;re free, and I&#39;ll set up your free 30-minute workout. No pressure &mdash; it&#39;s just a chance to meet, move, and see how I coach.</p>
-      <a class="btn btn-solid" href="mailto:Nick@callscoaching.com?subject=My%20free%2030-minute%20workout&body=Hi%20Nick%2C%20I'd%20like%20to%20claim%20my%20free%2030-minute%20workout.%0A%0AMy%20goals%3A%20%0AMy%20availability%3A%20%0A">Claim your free workout</a>
+      <p>Tell me a little about your goals and when you&#39;re free, and I&#39;ll set up your free 30-minute session. No pressure &mdash; it&#39;s just a chance to meet, move, and see how I coach.</p>
+      <a class="btn btn-solid" href="mailto:Nick@callscoaching.com?subject=My%20free%2030-minute%20workout&body=Hi%20Nick%2C%20I'd%20like%20to%20claim%20my%20free%2030-minute%20workout.%0A%0AMy%20goals%3A%20%0AMy%20availability%3A%20%0A">Claim your free session</a>
     </div>
     <div class="connect reveal">
       <a class="book-now" href="sms:+19013590305?&body=Hi%20Nick%2C%20I'd%20like%20to%20book%20my%20free%2030-minute%20workout.%0A%0AMy%20goals%3A%20%0AMy%20availability%3A%20%0A">
         <span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>
-        <span class="ct"><span class="label">Book now</span><span class="val">Text me to lock in your free workout</span></span>
+        <span class="ct"><span class="label">Book now</span><span class="val">Text me to lock in your free session</span></span>
       </a>
       <a href="sms:+19013590305?&body=Hi%20Nick%2C%20I'd%20like%20to%20claim%20my%20free%2030-minute%20workout.">
         <span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
@@ -92,7 +135,7 @@
       <h4>Explore</h4>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="memberships.html">Memberships</a>
+      <a href="memberships.html">Programs</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -104,21 +147,12 @@
       <a class="cta" href="contact.html">Start training &rarr;</a>
     </div>
   </div>
-  <div class="foot-pay"><div class="wrap"><div class="pay-methods">
-      <span class="pm-label">Accepted payments</span>
-      <div class="pm-row">
-        <span class="pm"><span class="pm-ic"><svg viewBox="0 0 48 48" width="50" height="50" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#00D64B"/><text x="24" y="34" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="30" fill="#fff">$</text></svg></span><span class="pm-name">Cash App</span></span>
-        <span class="pm"><span class="pm-ic"><svg viewBox="0 0 48 48" width="50" height="50" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#000"/><path fill="#fff" transform="translate(12,9) scale(1.05)" d="M16.36 1.43c0 1.14-.47 2.24-1.16 3.05-.74.88-1.95 1.56-2.94 1.48-.13-1.11.48-2.28 1.15-3.02.75-.85 2.06-1.5 2.95-1.51zM19.6 17.2c-.03.07-.46 1.58-1.52 3.12-.92 1.32-1.87 2.63-3.36 2.66-1.46.03-1.93-.86-3.6-.86-1.66 0-2.18.83-3.56.89-1.44.05-2.53-1.42-3.46-2.74C1.8 17.6.36 12.7 2.32 9.38c.97-1.65 2.7-2.7 4.58-2.72 1.42-.03 2.76.96 3.63.96.86 0 2.5-1.18 4.2-1.01.72.03 2.73.29 4.02 2.19-.1.07-2.4 1.4-2.37 4.19.03 3.32 2.92 4.43 2.95 4.44z"/></svg></span><span class="pm-name">Apple Pay</span></span>
-        <span class="pm"><span class="pm-ic"><svg viewBox="0 0 48 48" width="50" height="50" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#008CFF"/><text x="24" y="29" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="12" fill="#fff">venmo</text></svg></span><span class="pm-name">Venmo</span></span>
-        <span class="pm"><span class="pm-ic"><svg viewBox="0 0 48 48" width="50" height="50" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#16202e"/><rect x="8" y="15" width="32" height="18" rx="3" fill="#d3dce4" stroke="#2f62e6" stroke-width="1.4"/><circle cx="24" cy="24" r="5" fill="none" stroke="#2f62e6" stroke-width="1.5"/><text x="24" y="27.4" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="8" fill="#2f62e6">$</text><path d="M12 18.5h3M12 29.5h3M36 18.5h-3M36 29.5h-3" stroke="#2f62e6" stroke-width="1.3"/></svg></span><span class="pm-name">Cash</span></span>
-      </div>
-    </div></div></div>
   <div class="foot-bottom"><div class="wrap fb-in">
-    <span>&copy; <span id="yr"></span> Call Coaching &amp; Performance. All rights reserved. &middot; <span class="bld">build v3</span></span>
+    <span>&copy; <span id="yr"></span> Call Coaching &amp; Performance. All rights reserved. &middot; <span class="bld">build v7</span></span>
     <span>Trained by Nicholas Call &middot; Memphis, TN</span>
   </div></div>
 </footer>
 
-<script src="site.js?v=3"></script>
+<script src="site.js?v=7"></script>
 </body>
 </html>

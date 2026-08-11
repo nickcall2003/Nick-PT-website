@@ -71,3 +71,76 @@ nothing / old, the commit didn't land — re-upload and COMMIT.
 
 iPhone tip: delete old downloads first. iOS makes index (1).html,
 index (2).html ... it's easy to upload an older duplicate by accident.
+
+------------------------------------------------------------------
+BUILD v4 — conversion + brand upgrade
+------------------------------------------------------------------
+- THE CALLS PROTOCOL(TM): new branded system section on the homepage
+  (Train / Condition / Move / Fuel).
+- "Who Calls Coaching is for": self-select checklist near the top.
+- Pricing: Monthly is now the obvious BEST VALUE ("twice the training
+  for $60 more"); home snapshot + Programs page both updated.
+- "Memberships" -> "Programs" in the nav/footer (file name stays
+  memberships.html so no links break). Page titled "Coaching Programs".
+- The 5+5+5 plan wording is reframed as one complete weekly system
+  (home, Programs, FAQ) so it no longer reads like "15 workouts a week".
+- "Free workout" -> "Free 30-minute session" sitewide.
+- About: degree corrected -> "finishing my Bachelor's in Physical
+  Therapy at the University of Memphis (December 2026)". It never claims
+  to be a licensed physical therapist.
+- Payment icons pulled out of every footer; they now live only on the
+  Programs page.
+- Footer stamp now reads "build v4"; assets versioned ?v=4.
+
+LEAD FORM (Formspree)
+- contact.html has a "Let's build your plan" application form posting to
+  https://formspree.io/f/xrpzpnbw via AJAX (site.js). Visitor stays on
+  the page and sees a "Got it" message; no redirect.
+- First real submission: Formspree emails you to confirm the form the
+  first time. Send yourself a test after uploading, then check the email
+  address in your Formspree dashboard.
+- To change where it sends, edit the form in your Formspree dashboard
+  (no code change needed).
+
+------------------------------------------------------------------
+BUILD v5 — "The Daily Call" opt-in (replaces Daily motivation)
+------------------------------------------------------------------
+Homepage now has a compliant SMS opt-in: today's quote shows as a live
+preview, then visitors enter their mobile number + tick a consent box.
+Signups post to your Formspree inbox (name "phone", plus recorded
+consent), so you build a subscriber list with proof of consent.
+
+IMPORTANT — the website collects opt-ins; it does NOT send the texts.
+A static site cannot send scheduled SMS, and US carriers require
+consent + registration for automated texts. To actually send daily:
+  EASIEST (compliant): an SMS platform with keyword opt-in + scheduled
+    sends — SimpleTexting / EZTexting / Textedly (~$20-30/mo). People
+    text a keyword (e.g. CALL) to join; you schedule the daily message.
+    The platform handles consent, STOP/HELP, and carrier registration.
+  DIY: Twilio + a daily scheduler (e.g. a Railway cron). You must still
+    register the number (A2P 10DLC) and handle STOP yourself.
+Either way, the consent language on the form ("recurring automated
+texts... reply STOP... msg & data rates apply") is what keeps you
+compliant — keep it.
+
+Both forms (lead form + Daily Call) use one shared handler in site.js
+(form.js-formspree). Success text comes from each form's data-ok.
+
+------------------------------------------------------------------
+BUILD v6 — Daily motivation kept on-site (SMS opt-in removed)
+------------------------------------------------------------------
+Reverted "The Daily Call" opt-in. The homepage now just shows a
+motivational quote that rotates by day (site.js) — no phone number,
+no consent box, no texting, nothing collected or sent. The contact
+lead form (Formspree) is unchanged. Footer reads "build v6".
+
+------------------------------------------------------------------
+BUILD v7 — expanded daily quotes
+------------------------------------------------------------------
+The Daily motivation list in site.js now holds 82 quotes (your original
+4 + ~78 original brand-voice lines), rotating by day-of-year — so it
+won't repeat for ~2.5 months. Original lines show with no attribution;
+your 4 keep their credits.
+To edit/add: open site.js, find "var quotes=[" and add a line:
+  {t:`Your quote here`, by:"Name or leave empty"}
+Keep each entry on its own line ending in a comma (except the last).
