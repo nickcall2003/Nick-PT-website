@@ -1,4 +1,4 @@
-/* Call Coaching & Performance website, build v11 */
+/* Call Coaching & Performance website, build v12 */
 (function(){
 var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
 if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});document.addEventListener('keydown',function(e){if(e.key==='Escape'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}})}
